@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{width: 100%;
+            background-color: rgba(217, 29, 29, 0.885);
+        
+        }
+     .r2name {
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 87px;
+    margin-top: 2px;
+    font-family: Britannic Bold;
+    color: aliceblue;
+}
+       .r2place {
+    margin-left: 89px;
+    font-family: Gill Sans MT;
+    color: aliceblue;
+    font-size: 14px;
+    display: flex
+;
+}
+        .p{margin-left: 20px;
+            font-size: 5px;
+            color: azure;
+            line-height: 1px;
+            padding-bottom: 2px;
+           
+        }
+      .search-container {
+    display: flex
+;
+    justify-content: right;
+    align-items: right;
+    margin-top: -19px;
+    position: relative;
+    top: -44px;
+}
+    .search-box {
+      width: 300px;
+      padding: 10px;
+      border: 2px solid grey;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 0 5px 5px 0;
+       .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .search-box {
+      width: 300px;
+      padding: 10px;
+      border: 2px solid grey;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: darkred;
+    }
+    }
+
+    .search-button:hover {
+      background-color: darkred;
+    }
+    .slogan{display: flex;
+        position: relative;
+        top: -33px;
+        right: 53px;
+        justify-content: right;
+    font-size: 20px;
+   color: aliceblue;
+}
+.img {
+    display: flex
+;
+    position: relative;
+    margin-top: -53px;
+    margin-left: 8px;
+    width: 95px;
+    height: 59px;
+}
+    .navbar {
+      display: flex;
+      background-color: #c70000; /* Dark red */
+      padding: 0;
+      justify-content: center;
+    }
+
+    .navbar a,
+    .dropdown-btn {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropdown-btn {
+      background-color: rgba(217, 29, 29, 0.885); /* darker red on hover */
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown content (block element) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+
+      background-color: white;
+      color: black;
+      min-width: 560px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    .dropdown-content p,
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover,
+    .dropdown-content p:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+        .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Aside Styling */
+    aside {
+      width:10%;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-right: 2px solid #ddd;
+    }
+
+    aside h3 {
+      color: #c70000;
+      margin-bottom: 10px;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside ul li {
+      margin: 10px 0;
+    }
+
+    aside ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    aside ul li a:hover {
+      color: #c70000;
+    }
+    .admission-form-section {
+  background-color: #c30707;
+  background-image: url("https://images.freeimages.com/vhq/images/istock/previews/1067/106710579-polygon-pattern-abstract-background-red-theme.jpg");
+  
+  color: white;
+  padding: 20px 20px;
+  width:70% ;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  font-family: Arial, sans-serif;
+}
+
+.admission-form-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.admission-form .form-group {
+  margin-bottom: 20px;
+}
+
+.admission-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.admission-form input[type="text"],
+.admission-form input[type="email"],
+.admission-form input[type="tel"],
+.admission-form select,
+.admission-form textarea {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admission-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.gender-options input {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: white;
+  color: #c70000;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ffe5e5;
+}
+    .bg{
+  margin: 2px;
+  border-bottom: #c70000;
+    }
+    .whyr2 h1{
+        font-size: 40px;
+    }
+.whyr2 H1:hover{
+    color:#c70000;
+    border-bottom: #c70000;
+    
+}
+.whyr2 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+    padding: 2px;
+}
+.student-life {
+  background-color:  #c70000; 
+  border-radius: ;
+  color: white;
+  padding: 40px;
+  margin-top: 21px;
+}
+
+.student-life h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.student-life h1 span {
+  font-weight: 900;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffcc00; /* yellow label */
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.large {
+  grid-column: span 2; /* make first image larger */
+  grid-row: span 2;
+}
+.site-footer {
+    border-top: 2px solid white;
+  background-color: #c70000; /* Red theme */
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+  margin: 15px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #ffcccc;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="r2name">R2 RCET</div> 
+        <div class="r2place">BHILAI CHHATTISGARH</div>
+        <div class="img"><img src="Logo.png" alt=""></div>
+      <div class="search-container">
+    <input type="text" class="search-box" placeholder="Enter Keywords...">
+    <button class="search-button">Search</button>
+  </div>
+       <div class="slogan">"Empowering Minds, Shaping Futures."</div>
+
+</header>
+<div class="navbar">
+    <a href="r2rcet.html">HOME</a>
+
+    <div class="dropdown">
+      <div class="dropdown-btn">ABOUT US</div>
+      <div class="dropdown-content">
+        <p>About Us – R2 RCET Bhilai
+R2 RCET Bhilai is a premier institution of higher education dedicated to shaping the future of aspiring engineers, technocrats, and professionals. Located in the educational hub of Chhattisgarh, our college offers a vibrant academic environment, state-of-the-art infrastructure, and a holistic approach to learning.
+
+Founded with a vision to empower students with knowledge, innovation, and ethics, R2 RCET Bhilai is affiliated with leading technical universities and approved by AICTE. Our institution offers a wide range of undergraduate and postgraduate programs in engineering, management, and applied sciences, tailored to meet the demands of today’s competitive world.
+
+At R2 RCET Bhilai, we believe education is more than just academics. Our experienced faculty, modern laboratories, advanced libraries, and digital classrooms create a rich learning ecosystem. We focus on industry-based training, hands-on projects, soft skill development, and placement preparation to make our students career-ready.
+
+What sets us apart is our commitment to nurturing talent with discipline, integrity, and creativity. We regularly host seminars, workshops, tech fests, and industrial visits to keep students updated with real-world applications.
+
+With a strong placement cell, collaborations with industries, and a growing alumni network, R2 RCET Bhilai continues to be a trusted name in quality education. Our mission is to produce responsible global citizens who will lead with innovation and serve society with excellence.
+
+Join R2 RCET Bhilai — where education meets inspiration and dreams become reality.
+
+</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-btn">WHY R2 RCET</div>
+      <div class="dropdown-content">
+        <p>We provide world-class infrastructure, expert faculty, industry tie-ups, and placement opportunities.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-btn">COURSES</div>
+      <div class="dropdown-content">
+        <a href="#">B.Tech</a>
+        <a href="#">M.Tech</a>
+        <a href="#">MBA</a>
+        <a href="#">Diploma</a>
+      </div>
+    </div>
+
+    <a href="#">ADMISSION</a>
+  </div>
+  <div class="container">
+
+  <!-- ASIDE SECTION -->
+  <aside>
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#">Notices</a></li>
+      <li><a href="#">Enquiry</a></li>
+      <li><a href="#">Students Corner</li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </aside>
+  <section class="admission-form-section">
+  <h2>College Admission Application</h2>
+  <form class="admission-form">
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+    </div>
+
+    <div class="form-group">
+      <label for="program">Select Program *</label>
+      <select id="program" name="program" required>
+        <option value="">-- Select a Program --</option>
+        <option value="BTech">B.Tech</option>
+        <option value="MTech">M.Tech</option>
+        <option value="MBA">MBA</option>
+        <option value="BBA">BBA</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Gender *</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="other" required> Other</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Queries (optional)</label>
+      <textarea id="message" name="message" placeholder="Any message or queries"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Application</button>
+  </form>
+</section>
+</div>
+</section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>Campus</h4>
+      <ul>
+        <li><a href="#">RCDSR</a></li>
+        <li><a href="#">RSRRCET</a></li>
+        <li><a href="#">RCST</a></li>
+        <li><a href="#">RPS</a></li>
+        <li><a href="#">RPS-PLAY</a></li>
+        <li><a href="#">RIPS</a></li>
+        <li><a href="#">RIPSR</a></li>
+        <li><a href="#">RISM</a></li>
+        <li><a href="#">RITI</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>FEE Portal</h4>
+      <ul>
+        <li><a href="#">New Admissions</a></li>
+        <li><a href="#">Fee Structure</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Why Rungta</h4>
+      <ul>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Placement</a></li>
+        <li><a href="#">Tie-Ups</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Other Links</h4>
+      <ul>
+        <li><a href="#">Infrastructure</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google"></a>
+      </div>
+      <p class="copyright">© 2025 - All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
